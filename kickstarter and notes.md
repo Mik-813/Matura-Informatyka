@@ -1,79 +1,65 @@
-(Убедитесь в том, что вы имеете право создавать, редактировать и импортировать файлы/папки в выбранной директории)
+## Quick Start Guide for the Practical Part
 
-## Быстрый старт практической части
-1. Создать *корневую* папку `Ctrl + Shift + N`, с номером pesel в качестве названия (его лучше выучить наизусть)
-2. Открываем эту директорию, с помощью **PyCharm**
-3. Пока **PyCharm** открывается, создаем папку `dane` и переносим в нее предоставленные `załączniki`
-4. После того, как он открылся, сочетанием `Ctrl + N` добавляем новые файлы:
+0. Make sure you have permission to create, edit, and import files/folders in your chosen directory.
+1. Create a *root* folder with `Ctrl + Shift + N`, named after your PESEL number (it's best to know it by heart).
+2. Open this directory with **PyCharm**.
+3. While **PyCharm** is opening, create a folder called `dane` and move the provided `załączniki` (attachments) into it.
+4. Once it has opened, use `Ctrl + N` to add new files:
    - `wyniki4.txt`
    - `zadanie4.py`
-5. Чтобы запустить `zadanie4.py`, нажимаем `Ctrl + Shift + F10`
-6. Импортируем данные в `python`:
-    > *Допустим, что файл называется **name***
+5. To run `zadanie4.py`, press `Ctrl + Shift + F10`.
+6. Import the data into `python`:
+    > *Assume the file is called **name***
     ```python
     1   file = [x.strip() for x in open("dane/name.txt").readlines()]
       
-    # если данные - это числа, то лучше сразу написать int(x.strip())
+    # if the data consists of numbers, it's better to write int(x.strip()) right away
     ```
-- Копируем строку выше и меняем в ней `name.txt` на `przyklad.txt`
+- Copy the line above and change `name.txt` to `przyklad.txt`.
 
-    Одну из них закомментируем.
+    Comment out one of them:
 
     ```python
     1    # file = [x.strip() for x in open("dane/przyklad.txt").readlines()]
     2    file = [x.strip() for x in open("dane/name.txt").readlines()]
     ```
-- Теперь чтобы быстро переключаться, ткните в строку вверху и нажмите `Ctrl + / + /`
+- Now, to switch between them quickly, click on the line above and press `Ctrl + / + /`:
     ```python
     1    file = [x.strip() for x in open("dane/przyklad.txt").readlines()]
     2    # file = [x.strip() for x in open("dane/name.txt").readlines()]
     ```
-    Просто и быстро.
+    Simple and fast.
 
 ## Notes:
 
-При вписывании таблиц в `wyniki` обязательно должны быть заголовки в шапке, если колонок больше, чем одна 
+> When entering tables into `wyniki`, always include column headers if there is more than one column.
 
->В каждом задании на программирование ВСЕГДА сверяйте данные с `przyklad.txt`.
-Проверка занимает не много времени и делает вас более уверенным в ответе.
+> For every programming task, ALWAYS check your data against `przyklad.txt`.
+Checking doesn't take much time and makes you more confident in your answer.
 
-`Ctrl + Alt + S` > `keymap` > `Windows` можно изменить на `Sublime`
+> In PyCharm: `Ctrl + Alt + S` > `keymap` > switch `Windows` to `Sublime` for better shortcuts.
 
->В процессе выполнения заданий не стоит удалять ***черновичные*** данные, вместо этого их
->лучше поместить их в отдельный лист, но оставить их нужно обязательно
+> While working on tasks, don't delete your ***draft/scratch*** data - instead, move it to a separate sheet, but make sure to keep it.
 
-В **Excel** можно использовать *умную* вставку `Ctrl + Alt + V`
+> In **Excel**, you can use *smart* paste with `Ctrl + Alt + V`.
 
->Файл **Access**a лучше сразу не создавать, иначе могут возникнут проблемы с сохранением. Лучше провести сохранение из самой программы, когда все данные уже будут импортированы.
->
->---
->
->Так-же при написании многоступенчатых запросов, стоит сначала вывести и проверить все колонки которые вам нужны,
->а потом уже приступать ко следующим этапам их обработки
+> It's better not to create the Access file right away, as this can cause saving issues. Instead, save from within the program itself once all the data has already been imported.
+> Also, when writing multi-step queries, first output and check all the columns you need before moving on to further processing steps.
 
-Относитесь спокойно к ошибкам, не пугайтесь их. Перечитайте условие.
+> Stay calm about errors, don't be intimidated by them. Reread the task instructions.
 
->Читайте все, что написано в задании, иначе можно упустить детали, которые важны для выполнения задания.
->
->---
->
->Убедитесь в том, что вы понимаете задание и о чем конкретно вас просят.
->Если вы этого не сделаете, то и задание вы выполните неправильно.
+> Read everything written in the task carefully, otherwise you might miss details that matter for completing it.
+> Make sure you understand the task and exactly what is being asked of you.
+> If you don't do this, you'll end up completing the task incorrectly.
 
-Не стоит закрывать **PyCharm** в течение всего экзамена
-В **PyCharm** удобнее просматривать текстовые файлы (wyniki) и редактировать их. Так-же вам может
-понадобиться помощь языка программирования в каком-то из заданий.
+> Do not close **PyCharm** during the entire exam.
+**PyCharm** is more convenient for viewing and editing text files (wyniki). You may also need help from a programming language for one of the tasks.
 
+> It's more convenient to write queries in **PyCharm** - for this task, I create a file called `zadanie6.sql`.
+> Don't delete it either - if Access somehow loses your data, you'll always have a guaranteed backup solution.
+> If you decide to use this method, write a comment in the `zadanie6.sql` file listing the names of all tables and their columns.
+> **PyCharm** will use this for `autocompletion`, so you won't have to keep retyping them.
 
->запросы удобнее писать в **PyCharm**, для этой задачи я создаю файл `zadanie6.sql`
->Его тоже не стоит удалять, если access каким-то образом потеряет вfши данные, у вас всегда есть гарантированное решение.
->
->---
->
->Если вы решили воспользоваться этим методом, то в файле `zadanie6.sql`
->напишите комментарий, содержащий названия всех таблиц и их колонок.
->**PyCharm** будет их использовать для `autocompletion` и вам не придется все время заново их прописывать.
+> At the end of the exam, delete the `.idea` folder from the root directory.
 
-В конце экзамена удалите папку .idea из корневой директории
-
-#### Удачи.
+#### Good luck.
