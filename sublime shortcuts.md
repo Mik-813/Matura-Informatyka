@@ -1,32 +1,32 @@
-| Shortcuts (Sublime Keymap)                           | Explanation of a shortcut                                                            |
-| ---- | --- |
-| `Ctrl + Shift + S`                 | settings                                                     |
-| `Ctrl + Alt + Enter`               | вставить строку сверху                                       |
-| `Shift + Enter`                    | вставить строку снизу                                        |
-| `Ctrl + Enter`                     | перенести вниз все, что после курсора                        |
-| `Ctrl + Shift + J`                 | join lines                                                   |
-| `Ctrl + Shift + "+"`               | uncollapse everything                                        |
-| `Ctrl + Shift + "-"`               | collapse everything                                          |
-| `Ctrl + Alt + "+"`                 | uncollapse each in statement                                 |
-| `Ctrl + Alt + "-"`                 | collapse each in statement                                   |
-| `Ctrl + "-"`                       | collapse statement                                           |
-| `Ctrl + "+"`                       | collapse statement                                           |
-| `Alt + J`                          | (VsCode Ctrl + D)                                            |
-| `Ctrl + Alt + Shift + J`           | (VsCode Ctrl + F2)                                           |
-| `Ctrl + D`                         | copy down current line                                       |
-| `Ctrl + C`                         | copy and select current line                                 |
-| `Ctrl + X`                         | cut current line                                             |
-| `Ctrl + Z`                         | undo                                                         |
-| `Ctrl + Shift + Z`                 | redo                                                         |
-| `Ctrl + /`                         | comment/uncomment                                            |
-| `Ctrl + Alt + L`                   | reformat                                                     |
-| `Ctrl + Shift + M`                 | move Caret to matching brace                                 |
-| `Ctrl + Shift + W`                 | убрать выделение                                             |
-| `Alt + Arrow [Left / Right]`       | move between files                                           |
-| `Ctrl + Shift + U`                 | toggle case                                                  |
-| `Alt + Shift + Isert`              | toggle автоматическое добавление пробелов при переходе между строками, только квадратные выделения |
-| `Ctrl + Shift + Arrow [Down / Up]` | move smth down / up, but : matters                           |
-| `Alt + Arrow [Down / Up]`          | jump to the function below / above                           |
-| `Shift + Shift`                    | open project's files manager                                 |
-| `Ctrl + L`                         | line selection                                               |
-| `Ctrl + Shift + A`                 | inner selection                                              |
+| Shortcuts (Sublime Keymap) | Explanation of a shortcut |
+|---|---|
+| `Ctrl + Shift + S` | Open settings |
+| `Ctrl + Alt + Enter` | Insert line above |
+| `Shift + Enter` | Insert line below |
+| `Ctrl + Enter` | Move everything after the cursor to a new line below |
+| `Ctrl + Shift + J` | Join lines |
+| `Ctrl + Shift + "+"` | Uncollapse everything |
+| `Ctrl + Shift + "-"` | Collapse everything |
+| `Ctrl + Alt + "+"` | Uncollapse each block within the statement |
+| `Ctrl + Alt + "-"` | Collapse each block within the statement |
+| `Ctrl + "-"` | Collapse statement |
+| `Ctrl + "+"` | Uncollapse statement |
+| `Alt + J` | Select next occurrence (VS Code: `Ctrl + D`) |
+| `Ctrl + Alt + Shift + J` | Select all occurrences / rename symbol (VS Code: `Ctrl + F2`) |
+| `Ctrl + D` | Duplicate current line below |
+| `Ctrl + C` | Copy current line (selects it first) |
+| `Ctrl + X` | Cut current line |
+| `Ctrl + Z` | Undo |
+| `Ctrl + Shift + Z` | Redo |
+| `Ctrl + /` | Toggle comment |
+| `Ctrl + Alt + L` | Reformat code |
+| `Ctrl + Shift + M` | Move caret to matching brace |
+| `Ctrl + Shift + W` | Clear selection |
+| `Alt + Arrow [Left / Right]` | Switch between open files |
+| `Ctrl + Shift + U` | Toggle case (upper/lower) |
+| `Alt + Shift + Insert` | Toggle automatic space insertion when moving between lines (block/column selection mode only) |
+| `Ctrl + Shift + Arrow [Down / Up]` | Move current line/block down or up (behavior depends on context, e.g. colons) |
+| `Alt + Arrow [Down / Up]` | Jump to the function below / above |
+| `Shift + Shift` | Open project file manager (Go to File) |
+| `Ctrl + L` | Select line |
+| `Ctrl + Shift + A` | Select inner block (e.g. inside brackets/quotes) |
